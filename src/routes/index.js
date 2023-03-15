@@ -2,10 +2,14 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import config from '@/config'
 
-import Home from '../pages/Home.vue'
+import Home from '@/pages/Home.vue'
+import Resources from '@/pages/Resources.vue'
+import LogIn from '@/pages/LogIn.vue'
 
 const publicRoutes = [
-    { path: config.routes.home, component: Home, props: { abc: 'adasda'} },
+    { path: config.routes.home, component: Home },
+    { path: config.routes.resources, component: Resources },
+    { path: config.routes.logIn, component: LogIn },
 ]
 
 const router = createRouter({

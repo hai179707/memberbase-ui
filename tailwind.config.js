@@ -7,7 +7,7 @@ module.exports = {
         'primary': '#1d1d1d',
         'primary-hover': '#33383f',
         'secondary': '#626a72',
-        'secondary-hover': '#33383f'
+        'secondary-hover': '#33383f',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif']

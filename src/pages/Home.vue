@@ -1,5 +1,15 @@
 <template>
-  <div class="h-screen">
-    <h1 class="text-red-500">Home</h1>
+  <div>
+    <intro-section />
   </div>
 </template>
+
+<script>
+import IntroSection from '@/components/IntroSection.vue'
+
+export default {
+  components: {
+    IntroSection
+  }
+}
+</script>

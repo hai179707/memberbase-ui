@@ -1,6 +1,6 @@
 <template>
     <Header />
-    <div class="pt-20">
+    <div class="pt-20 min-h-[90vh]">
         <slot />
     </div>
     <Footer />

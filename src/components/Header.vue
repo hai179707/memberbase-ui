@@ -1,23 +1,21 @@
 <template>
-  <div class="h-20 fixed w-full bg-white z-20 border-b border-gray-200">
-    <div class="container mx-auto flex items-center h-full px-5 sm:px-0">
+  <div class="h-20 fixed w-full bg-white z-20 border-b border-gray-200 text-sm">
+    <div class="ct-container flex items-center h-full">
         <router-link :to="config.routes.home" class="min-w-[178px]">
           <img src="@/assets/images/logo-dark.svg" alt="brand" class="w-[178px]" />
         </router-link>
         <div 
-            class="sm:hidden flex justify-end flex-1 cursor-pointer text-xl"
+            class="md:hidden flex justify-end flex-1 cursor-pointer text-xl"
             @click="toggleMobileNav"
         >
             <font-awesome-icon :icon="openMobileNav ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'" />
         </div>
         <div 
-            class="flex-1 flex flex-col sm:flex-row items-center w-full sm:w-auto justify-between fixed sm:relative top-20 sm:top-auto sm:left-auto bg-white sm:bg-transparent transition-all duration-500 py-5 sm:pl-5"
+            class="flex-1 flex flex-col md:flex-row items-center w-full md:w-auto justify-between fixed md:relative top-20 md:top-auto md:left-auto bg-white md:bg-transparent transition-all duration-500 py-5 md:pl-5"
             :class="openMobileNav ? 'left-0' : '-left-full'"
         >
-          <div>Search</div>
-          <div>
-            <Button title="Free Sign Up" @click-event="onClick" />
-          </div>
+          <header-search />
+          <header-nav />
         </div>
     </div>
   </div>
@@ -28,7 +26,8 @@ import config from "@/config"
 </script>
 
 <script>
-import Button from "./Button.vue"
+import HeaderNav from "./HeaderNav.vue"
+import HeaderSearch from "./HeaderSearch.vue"
 
 export default {
     data() {
@@ -37,7 +36,8 @@ export default {
         }
     },
     components: {
-        Button
+        HeaderNav,
+        HeaderSearch
     }, 
     methods: {
         toggleMobileNav() {
