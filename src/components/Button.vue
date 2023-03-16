@@ -9,7 +9,7 @@
             secondary ? 'py-2 px-5 text-white bg-secondary hover:bg-secondary-hover' : outline ? 'py-2 px-5 text-secondary bg-gray-100 border border-gray-200 hover:bg-gray-200' : 'py-2 px-5 text-white bg-primary hover:bg-primary-hover'
         "
         @click="onClick"
-        >
+    >
         {{ title }}
     </component>
 </template>
@@ -29,9 +29,10 @@ export default {
         outline: Boolean,
         large: Boolean,
     },
-    methods: {
-        onClick() {
-            this.$emit('clickEvent')
+    setup(props, {emit}) {
+        const onClick = () => emit('clickEvent')
+        return {
+            onClick
         }
     }
 }

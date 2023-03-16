@@ -10,22 +10,26 @@
         <input 
             type="text"
             placeholder="Search resources"
-            class="outline-none border-none bg-transparent w-[200px] lg:w-[280px]"
+            class="outline-none border-none bg-transparent w-[200px] lg:w-[280px] pr-3"
             v-model="searchValue"
         />
        </form>
     </div>
 </template>
 <script>
+import { ref } from 'vue'
+
 export default {
-    data() {
-        return {
-            searchValue: ''
+    setup() {
+        const searchValue = ref('')
+
+        const onSubmit = () => {
+            console.log(searchValue.value)
         }
-    },
-    methods: {
-        onSubmit() {
-            console.log(this.searchValue)
+
+        return {
+            searchValue,
+            onSubmit
         }
     }
 }
