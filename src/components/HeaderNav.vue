@@ -25,13 +25,14 @@ export default {
   components: {
     Button,
   },
-  setup() {
-    const onClick = () => console.log("Free Sign Up");
-
-    return {
-      onClick,
-    };
-  },
+  // setup() {
+  //   return {
+  //     onClick: () => console.log("Free Sign Up"),
+  //   };
+  // },
+  methods: {
+    onClick: () => console.log("Free Sign Up"),
+  }
 };
 </script>
 
