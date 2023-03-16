@@ -19,7 +19,6 @@
   </div>
 </template>
 <script>
-import config from "@/config";
 import Button from "./Button.vue";
 
 export default {
@@ -27,25 +26,15 @@ export default {
     Button,
   },
   setup() {
-    const navs = [
-      {
-        id: 1,
-        url: config.routes.resources,
-        text: "All Resources",
-      },
-      {
-        id: 2,
-        url: config.routes.logIn,
-        text: "Log In",
-      },
-    ];
-
-    const onClick = () => console.log('Free Sign Up')
+    const onClick = () => console.log("Free Sign Up");
 
     return {
-      navs,
-      onClick
+      onClick,
     };
   },
 };
+</script>
+
+<script setup>
+import { navs } from "@/data";
 </script>

@@ -1,13 +1,7 @@
 <template>
   <div class="h-20 fixed w-full bg-white z-20 border-b border-gray-200 text-sm">
-    <div class="ct-container flex items-center h-full">
-      <router-link to="/" class="min-w-[178px]">
-        <img
-          src="@/assets/images/logo-dark.svg"
-          alt="brand"
-          class="w-[178px]"
-        />
-      </router-link>
+    <div class="ct-container px-5 flex items-center h-full">
+      <logo />
       <div
         class="md:hidden flex justify-end flex-1 cursor-pointer text-xl"
         @click="onToggleMobileNav"
@@ -31,6 +25,7 @@
 <script>
 import HeaderNav from "./HeaderNav.vue";
 import HeaderSearch from "./HeaderSearch.vue";
+import Logo from "./Logo.vue";
 import { useStore } from "vuex";
 import { computed } from "vue";
 
@@ -50,6 +45,7 @@ export default {
   components: {
     HeaderNav,
     HeaderSearch,
+    Logo
   },
 };
 </script>

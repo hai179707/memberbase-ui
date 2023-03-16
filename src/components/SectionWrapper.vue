@@ -1,5 +1,5 @@
 <template>
-    <div class="py-20" :style="{background: bgColor}">
+    <div class="py-20" :style="{backgroundImage: bgImage, backgroundColor: bgColor}">
         <div class="ct-container">
             <slot />
         </div>
@@ -9,9 +9,10 @@
 <script>
 export default {
     props: {
+        bgImage: String,
         bgColor: {
-            type: String,
-            default: '#fff'
+            type: String, 
+            default: '#f5f6f7'
         }
     }
 }

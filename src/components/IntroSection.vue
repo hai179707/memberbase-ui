@@ -1,6 +1,6 @@
 <template>
-    <section-wrapper bgColor="linear-gradient(54deg, rgba(255, 131, 122, 0.25), rgba(255, 131, 122, 0) 28%), linear-gradient(241deg, rgba(239, 152, 207, 0.25), rgba(239, 152, 207, 0) 36%)">
-        <div class="flex flex-wrap flex-col-reverse md:flex-row gap-y-4 md:items-center">
+    <section-wrapper bgImage="linear-gradient(54deg, rgba(255, 131, 122, 0.25), rgba(255, 131, 122, 0) 28%), linear-gradient(241deg, rgba(239, 152, 207, 0.25), rgba(239, 152, 207, 0) 36%)">
+        <div class="flex flex-wrap flex-col-reverse md:flex-row gap-y-4 md:items-center px-5">
            <div class="w-full md:w-2/3"> 
                 <div class="max-w-[500px]">
                     <h1 class="text-[35px] md:text-[46px] font-semibold leading-[1.25em]">Access a library of free design resources</h1>
