@@ -1,9 +1,7 @@
 <template>
-  <div>
     <intro-section />
     <featured-resources-section />
     <subscribe-section />
-  </div>
 </template>
 
 <script>

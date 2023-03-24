@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full sm:w-1/2 lg:w-1/3 px-5 transition-transform duration-300 hover:-translate-y-1">
+    <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-5 transition-transform duration-300 hover:-translate-y-1">
         <router-link :to="'/resources/' + data.path">
             <img :src="data.image" alt="resource" class="rounded-lg mb-5" />
         </router-link>
